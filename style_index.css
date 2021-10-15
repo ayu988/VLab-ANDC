@@ -81,7 +81,7 @@ header .navigation li:hover a {
     position: relative;
 }
 .hover::before {
-    content: ' * * * * * * * * * * * * * ';
+    content: ' * * * * * * * * * * * * * * * * ';
     position: absolute;
     width: 100%;
     transform: scaleX(0);
