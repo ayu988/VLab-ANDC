@@ -1,7 +1,5 @@
 window.onload = function () {
     var d = document;
-    d.addEventListener('contextmenu', event => event.preventDefault());
-    preventDefault()
     var canvas = d.getElementById("canvas");
     var c = canvas.getContext("2d");
     canvas.width = 300;
