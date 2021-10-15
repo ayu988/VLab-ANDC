@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Monte-Carlo Estimation of Pi
+        </title>
+        <link rel="stylesheet" href="style_monte-main.css" />
+    </head>
+    <body>
+        <header>
+            <div class="logo"><img class="logo" src="andc_logo.jpg"></div>
+            <h1>VLab@ANDC</h1>
+            <ul class="navigation">    
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="index.html">Labs</a></li> 
+                <li><a href="#team">Team</a></li> 
+                <li><a href="#contact">Contact Us</a></li> 
+                <li><a href="https://www.andcollege.du.ac.in/" target="_blank" rel="noopener noreferrer">College Website</a></li> 
+            </ul>
+        </header>
+        <div class="exp-heading"><h1>Monte-Carlo Estimation of Pi</h1></div>
+        <nav>
+            <div class="box">
+                <img class="icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBmpbB3jSjMF-FDgIL1E-eRN6eeCDLSsvoAQ&usqp=CAU">
+                Aim
+            </div>
+            <div class="box">
+                <img class="icon" src="https://cdn-icons-png.flaticon.com/512/1648/1648697.png">
+                Theory
+            </div>
+            <div class="box">
+                <img class="icon" src="https://cdn4.iconfinder.com/data/icons/project-management-1-11/65/23-512.png">
+                Procedure
+            </div>
+            <div class="box">
+                <img class="icon" src="https://thumbs.dreamstime.com/b/computer-simulation-icon-flat-style-vr-device-vector-illustration-black-round-background-long-shadow-technology-149360530.jpg">
+                Simulator
+            </div>
+            <div class="box">
+                <img class="icon" src="https://img.freepik.com/free-vector/business-management-vector_53876-44131.jpg?size=338&ext=jpg">
+                Observations
+            </div>
+            <div class="box">
+                <img class="icon" src="https://cdn4.iconfinder.com/data/icons/collection-of-online-business-icons/64/Board_Chart_Results_Business-512.png">
+                Result
+            </div>
+            <div class="box">
+                <img class="icon" src="https://image.pngaaa.com/134/5592134-middle.png">
+                References
+            </div>
+        </nav>
+        <section id="exp">
+            <div class="container">
+                <div class="box">
+                    <div class="title">
+                        <h2 class="heading">Aim</h2>
+                    </div>
+                    <div class="desc1"><p class="desc">To calculate value of &#960 using Monte-Carlo simulations.</p></div>
+                </div>
+                <div class="box">
+                    <div class="title">
+                        <h1 class="heading">Theory</h1>
+                    </div>
+                    <div class="desc1">
+                        <p class="desc"><h2 class="desc-heading">What is Pi?</h2>
+                        <p class="desc">Pi is the famous circle number approximately given by 3.14159…</p>
+                        <p class="desc">It is the area of the unit circle (i.e. the circle with radius 1) or half the perimeter of the unit circle.</p>
+                        <h2 class="desc">What is a Monte-Carlo Simulation?</h2>
+                        <p class="desc">Monte-Carlo Simulations are experiments or computational algorithms that rely on sampling of random numbers. An experiment or a simulation of random numbers is repeated a large number of times to estimate something that may be determined deterministically as well (such as π, as it is a deterministic number, i.e. it does not depend on randomness or chance).</p>
+                        <p class="desc">Monte-Carlo Simulations are used whenever calculating something in a deterministic fashion is too computationally expensive or not feasible anymore. Or when you’re just too lazy to compute something exactly.
+                            And sometimes it is not even necessary to use Monte-Carlo Simulations and the only reason to use them is to show how beautiful Math and Probabilities can be.</p>
+                        </p>                    
+                </div>
+                </div>
+                <div class="box">
+                    <div class="title">
+                        <h2 class="heading">Procedure</h2>
+                    </div>
+                    <div class="desc1"><ol class="desc">
+                        <li>Initialize circle_points, square_points and interval to 0. </li>
+                        <li>Generate random point x. </li>
+                        <li>Generate random point y.</li>
+                        <li>Calculate d = x*x + y*y.</li>
+                        <li>If d <= 1, increment circle_points.</li>
+                        <li>Increment square_points.</li>
+                        <li>Increment interval.</li>
+                        <li>If increment < NO_OF_ITERATIONS, repeat from 2.</li>
+                        <li>Calculate pi = 4*(circle_points/square_points).</li>
+                        <li>Terminate.</li>
+                    </ol>
+                </div>
+                </div>
+                <div class="box">
+                    <div class="title">
+                        <h2 class="heading">Simulator</h2>
+                    </div>
+                    <a href="monte-sim.html">
+                    <div class="desc1"><p class="desc">To calculate value of &#960 using Monte-Carlo simulations.</p></div></a>
+                </div>
+                <div class="box">
+                    <div class="title">
+                        <h2 class="heading">Observations</h2>
+                    </div>
+                    <div class="desc1"><p class="desc">Take Observations from simulator and tabulate it for &#960 and Interval. </div>
+                    <div class="desc1"><p class="desc">Plot a graph also. (&#960 vs Interval).</div>
+                </div>
+                <div class="box">
+                    <div class="title">
+                        <h2 class="heading">Result</h2>
+                    </div>
+                    <div class="desc1"><p class="desc">The  value of &#960 is--> 3.14159265359</p></div>
+                    <div class="desc1"><p class="desc">But, we take &#960 approximately equal to 3.14.</p></div>
+                    <div class="desc1"><p class="desc">Any result coming in range 3.13 to 3.15 may be considered as successful simulation of the method. </p></div>
+                </div>
+                <div class="box">
+                    <div class="title">
+                        <h2 class="heading">References</h2>
+                    </div>
+                    <div class="desc1">
+                        <p class="desc"><a href="https://en.wikipedia.org/wiki/Monte_Carlo_method">Monte_Carlo_method-on Wikipedia</a></p>
+                        <p class="desc"><a href="https://brilliant.org/wiki/monte-carlo/">Monte_Carlo_method-on Brilliant.org</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

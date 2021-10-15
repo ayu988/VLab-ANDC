@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src='https://cdn.plot.ly/plotly-2.4.2.min.js'></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monte Carlo Method</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style_monte-sim.css">
+    <script src="mnty.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img class="logo" src="andc_logo.jpg"></div>
+        <h1>VLab@ANDC</h1>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Labs</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="https://www.andcollege.du.ac.in/" target="_blank" rel="noopener noreferrer">College Website</a>
+            </li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="header">
+            <h1 id="title"><pre>Calculating Pi(π)</pre></h1>
+            <h3 id="sub">Using the Monte Carlo Method.</h3>
+            <div class="working">
+                <h4 id="subTitle">How it Works:</h4>
+                <p id="info">The Monte Carlo method is a method of computing Pi(π). The way it works is by creating a
+                    small
+                    circle inside a square. The square should have a circle in it that covers it from top to bottom. A
+                    small
+                    arc will be placed in a random location of this square.
+                    If the arc lands inside of the circle, the amount of circles inside increments by one. To calculate
+                    π
+                    you must do the following formula:</p>
+            </div>
+            <div class="math1">
+                    &#960; = 4 × (Points Inside Circle ÷ Total Points)
+            </div>
+        </div>
+        <p id="info">The higher the values of the points the closer it is to π. Press the <span
+                id="infoStart">start</span> button
+            to start the simulation.</p>
+        <div class="main">
+            <canvas id="canvas">
+                This is a simulation
+            </canvas>
+            <input type="number" name="inputnumber" id="inp1" value="" placeholder="Enter the number of point you want">
+            <button id="start">Start</button>
+
+            <table>
+                <tr>
+                    <th>Points Inside:</th>
+                    <th>Points Outside:</th>
+                    <th>Total Points:</th>
+                </tr>
+                <tr>
+                    <td id="inside">0</td>
+                    <td id="outside">0</td>
+                    <td id="total">0</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>Estimated value of Pi(π) is</th>
+                </tr>
+                <tr>
+                    <td id="pi">0</td>
+                </tr>
+            </table>
+        </div>
+        <div class="controls">
+            <!-- <button id="stop">Stop</button> -->
+            <!-- <button id="reset">Reset</button> -->
+        </div>
+    </div>
+    </div>
+    <div id="graph"><!--askjcbn--></>
+    <footer>
+        <div class="footer">
+            <p >Created by Ayush Mishra and Vaibhav Thapliyal</p>
+            <p >Acharya Narendra Dev College</p>
+            <p> All &copy;copyrights reserved </p>
+        </div>
+    </footer>  
+</body>
+
+</html>
