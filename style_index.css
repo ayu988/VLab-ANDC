@@ -206,6 +206,7 @@ section> .hover1{
     background: rgb(68, 13, 9);
 }
 .container .discipline .space .heading, .description {
+    font-weight: bold;
     text-decoration: none;
 }
 .container .discipline:hover .heading, .description {
@@ -224,8 +225,4 @@ section> .hover1{
     flex-direction: column;
     align-items: center;
     justify-content: space-between
-}
-.description{
-    color: black;
-    font-weight: bold;
 }
