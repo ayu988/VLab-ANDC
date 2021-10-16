@@ -205,7 +205,7 @@ section> .hover1{
     box-shadow: 0 0 0 400px rgba(70, 4, 53, 0.87);
     background: rgb(68, 13, 9);
 }
-.container .discipline .space .lab h3, p {
+.container .discipline .space .lab > h3, p {
     color: rgb(0, 0, 0);
     font-weight: bold;
 /*     text-decoration: none; */
