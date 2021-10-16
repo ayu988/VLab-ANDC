@@ -211,7 +211,7 @@ section> .hover1{
 /*     text-decoration: none; */
 }
 .container .discipline:hover .space .lab > h3, p {
-    color: rgb(200, 251, 255);
+    color: white;
 }
 .contain {
     margin: 10rem;
