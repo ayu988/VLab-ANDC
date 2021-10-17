@@ -66,6 +66,7 @@ span .navigation li a:hover {
     margin: 5%;
 }
 .exps {
+    transition: 0.6s ease-in-out;
     margin: 5%;
     margin-top: 2%;
     margin-left: 3%;
@@ -111,4 +112,8 @@ span .navigation li a:hover {
 .box .image-problem{
     width: 50%;
     height: 50%;
+}
+.box:hover {
+    transition: 0.5s ease-in-out;
+    background-color: wheat;
 }
