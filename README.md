@@ -1,2 +1,2 @@
 # VLab-ANDC-by-Ayush-Vaibhav
-
+Shani ki 7.5 lgi hai.....bccch ke rhen........

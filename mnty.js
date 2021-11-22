@@ -36,17 +36,21 @@ window.onload = function () {
     c.arc(circle.x, circle.y, circle.r, 0, Math.PI * 2, false);
     c.strokeStyle= "white";
     c.stroke();
+
     const pi_value = []
     const pi_data = [];
     const interval = [];
+    const array = [];
+
     var delayInMilliseconds = 100
     d.getElementById("start").onclick =function ab() {
         var iterate = document.getElementById("inp1").value;
         
     function draw() {
-        for (let i = 0; i < iterate; i++) {
+        for (let i = 1; i <= iterate; i++) {
             let x = Math.floor(Math.random() * (main.h + 1));
             let y = Math.floor(Math.random() * (main.h + 1));
+            interval.push(i);
             
             setTimeout(function() {
                 if (
@@ -69,8 +73,8 @@ window.onload = function () {
                     
                     data.pi = 4 * (data.pIn / data.pTotal);
                     pi_data.push(data.pi);
-                    pi_value[i]=3.1452;
-                    interval.push(i);
+                    array.push(interval,data.pi);
+                    pi_value[i]=3.14159265359;
                     elements.pi.innerHTML = data.pi;
                     var trace1 = {
                         x: interval,
@@ -103,6 +107,7 @@ window.onload = function () {
                     c.stroke();
                 }
               , delayInMilliseconds)};
+              
               //console.log(pi_data,interval);
             
             
@@ -136,8 +141,26 @@ window.onload = function () {
         }
             reset();
             start();
+            
+            
         };
-        
+        d.getElementById("click_downlsoad").onclick = function down() {
+            const rows = [
+                ['Iteration','Calculated Pi'],
+                [interval,pi_data]
+            ];
+            let csvContent = "data:text/csv;charset=utf-8,";
+            rows.forEach(function(rowArray) {
+                let row = rowArray.join("\n");
+                csvContent += row + "\r\n";
+            });
+            var encodedUri = encodeURI(csvContent);
+            var link = document.createElement("a");
+            link.setAttribute("href", encodedUri);
+            link.setAttribute("download", "my_data.csv");
+            document.body.appendChild(link); // Required for FF
+            link.click();
+        };    
         // d.getElementById("stop").onclick = function () {
             //     content.run = false;
             // };

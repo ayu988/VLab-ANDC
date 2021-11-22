@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <script src="https://cdn.jsdelivr.net/gh/CDNSFree2/PrismJS@latest/prism.min.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=0.1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
             Monte-Carlo Estimation of Pi
         </title>
@@ -17,7 +17,7 @@
                 <li><a href="index.html">Home</a></li> 
                 <li><a href="index.html#labs_section">Labs</a></li> 
                 <li><a href="index.html#team">Team</a></li> 
-                <li><a href="contact.html">Contact Us</a></li> 
+                <li><a href="index.html#contact">Contact Us</a></li> 
                 <li><a href="https://www.andcollege.du.ac.in/" target="_blank" rel="noopener noreferrer">College Website</a></li> 
             </ul>
         </header>
@@ -161,6 +161,44 @@
                     <div class="desc1"><p class="desc">Plot a graph also. (&#960 vs Interval).</div>
                     <img src="newplot.png">    
                 </div>
+                <div class="box">
+                    <div class="title">
+                        <h2 class="title">Code Runner </h2>
+                        <div class="editor">
+                            #include&ltiostream&gt
+                                #include&ltstdlib.h&gt
+                                #include&lttime.h&gt
+                                #include&ltiomanip&gt
+                                
+                                
+                                using namespace std;
+                                int main()
+                                {
+                                    cout.setf(ios::fixed);
+                                    cout&lt&lt"------------------------------------------------------------"&lt&ltendl;
+                                    cout&lt&lt"x"&lt&ltsetw(15)&lt&lt"y"&lt&ltsetw(14)&lt&lt"circle_pt"&lt&ltsetw(12)&lt&lt"square_pt"&lt&ltsetw(10)&lt&lt"pi"&lt&ltendl;
+                                    cout&lt&lt"------------------------------------------------------------"&lt&ltendl;
+                                    int i, intrval=1000;
+                                    int cr_pt=0, sq_pt=0;
+                                    double x,y,pi,r;
+                                    srand(time(NULL));
+                                    for (i=0; (i&ltintrval); i++)
+                                    {
+                                        x=double((1+rand()%intrval))/intrval;
+                                        y=double((1+rand()%intrval))/intrval;
+                                        r= x*x + y*y;
+                                        if (r&lt=1)
+                                            cr_pt++;
+                                        sq_pt++;
+                                        
+                                        pi=double(4*cr_pt)/sq_pt;
+                                        cout&lt&ltx&lt&ltsetw(10)&lt&lty&lt&ltsetw(10)&lt&ltcr_pt&lt&ltsetw(10)&lt&ltsq_pt&lt&ltsetw(15)&lt&ltpi&lt&ltendl;
+                                    } 
+                                    return 0;
+                                }
+                        </div>
+                    </div>
+                </div>
                 <div class="box" id="result">
                     <div class="title">
                         <h2 class="heading">Result</h2>
@@ -198,6 +236,12 @@
      return false;
   }
 }
+    </script>
+    <script src="/ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        var editor = ace.edit("editor");
+        editor.setTheme("ace/theme/monokai");
+        editor.getSession().setMode("ace/mode/javascript");
     </script>
     </body>
 </html>
