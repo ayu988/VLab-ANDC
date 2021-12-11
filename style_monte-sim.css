@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 header {
-    position: fixed;
+    position: absolute;
     top: 0%;
     left: 0%;
     width: 100%;
@@ -69,6 +69,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.pi-detail{
+    /* border: 4px solid black; */
+    width: 95%;
+    margin: 0px auto;
 }
 
 .header {
@@ -138,22 +143,14 @@ body {
 
 .container table {
     padding: 3px;
-    width: 100%;
+    width: 70%;
     overflow: hidden;
+    margin: 0px auto;
 }
 #start{
-    /* display: flex;
-    width: 100%;
-    height: 25px;
-    margin: 20px auto;
-    justify-content: space-around;
-    border-radius: 10px;
-    border: 2px solid #ffff00;
-    font-weight: bold;
-    font-size: 15px; */
     background-color: black;
     color: white;
-    margin: 0px 570px;
+    margin: 10px auto;
     padding: 2px 20px;
     border: 2px solid grey;
     border-radius: 10px;
@@ -162,6 +159,23 @@ body {
     font-family: 'Baloo Bhai 2', cursive;
     font-weight: bold;
 }
+#click_download{
+    background-color: black;
+    color: white;
+    /* margin-top: 10px; */
+    margin: 0 auto;
+    padding: 2px 20px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-weight: bold;
+}
+/* .btn{
+    margin-left: 500px;
+    display: flex;
+} */
 
 .container table *,
 .container table {
@@ -180,7 +194,7 @@ body {
 }
 
 #pi {
-    padding-left: 45%;
+    padding-left: 50%;
     text-align: left;
 }
 
@@ -190,6 +204,11 @@ body {
     height: 25px;
     margin: 20px 0;
     justify-content: space-around;
+}
+#graph{
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: 1%;
 }
 
 .controls button {
@@ -227,6 +246,7 @@ footer {
     /* display: flex; */
     align-content: center;
     justify-content: center;
+    margin: 2%;
 }
 
 #inp1{
@@ -255,7 +275,10 @@ body>footer {
     text-align: center;
     justify-content: center;
     align-content:center;
-    margin: 5%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: -4%;
 }
 .container>table{
     color: white;
