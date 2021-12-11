@@ -21,14 +21,17 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="index.html#labs_section">Labs</a></li>
             <li><a href="index.html#team">Team</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="index.html#contact">Contact Us</a></li>
             <li><a href="https://www.andcollege.du.ac.in/" target="_blank" rel="noopener noreferrer">College Website</a>
             </li>
         </ul>
     </header>
     <div class="container">
+        <div class="pi-detail">
         <div class="header">
-            <h1 id="title"><pre>Calculating Pi(π)</pre></h1>
+            <h1 id="title">
+                <pre>Calculating Pi(π)</pre>
+            </h1>
             <h3 id="sub">Using the Monte Carlo Method.</h3>
             <div class="working">
                 <h4 id="subTitle">How it Works:</h4>
@@ -42,7 +45,7 @@
                     you must do the following formula:</p>
             </div>
             <div class="math1">
-                    &#960; = 4 × (Points Inside Circle ÷ Total Points)
+                &#960; = 4 × (Points Inside Circle ÷ Total Points)
             </div>
         </div>
         <p id="info">The higher the values of the points the closer it is to π. Press the <span
@@ -53,7 +56,10 @@
                 This is a simulation
             </canvas>
             <input type="number" name="inputnumber" id="inp1" value="" placeholder="Enter the number of point you want">
-            <button id="start">Start</button>
+            <div class="btn">
+                <button id="start">Start</button>
+                <!-- <button id="reset">Reset</button> -->
+            </div>
 
             <table>
                 <tr>
@@ -76,22 +82,27 @@
                 </tr>
             </table>
         </div>
+        </div>
         <div class="controls">
             <!-- <button id="stop">Stop</button> -->
             <!-- <button id="reset">Reset</button> -->
         </div>
     </div>
     </div>
-    <div id="graph"><!--askjcbn--></div>
-        <div id="click_downlsoad"><button id="click_download">File Download</button></div>
+    <div id="graph">
+        <!--askjcbn-->
+    </div>
+    <div id="click_downlsoad">
+        <button id="click_download">File Download</button>
+    </div>
     <footer>
         <div class="footer">
-            <p >Created by Ayush Mishra and Vaibhav Thapliyal</p>
-            <p >Acharya Narendra Dev College</p>
+            <p>Created by Ayush Mishra and Vaibhav Thapliyal</p>
+            <p>Acharya Narendra Dev College</p>
             <p> All &copy;copyrights reserved </p>
         </div>
     </footer>
-<!-- <script>
+    <!-- <script>
 document.onkeydown = function(e) {
   if(event.keyCode == 123) {
      return false;
@@ -111,4 +122,5 @@ document.onkeydown = function(e) {
 }
 </script> -->
 </body>
+
 </html>
