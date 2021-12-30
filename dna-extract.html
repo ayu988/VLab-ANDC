@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <script src="https://cdn.jsdelivr.net/gh/CDNSFree2/PrismJS@latest/prism.min.js"></script>
+        <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shotcut icon" type="image/jpg" href="FavAndLogo.png">
+        <link rel="shotcut icon" type="image/jpg" href="images/FavAndLogo.png">
         <title>
             DNA Extraction from E.coli
         </title>
-        <link rel="stylesheet" href="style_dna-extract.css" />
+        <link rel="stylesheet" href="css/style_dna-extract.css" />
     </head>
     <body oncontextmenu="return false">
         <header>
-            <div class="logo"><img class="logo" src="andc_logo.jpg"></div>
+            <div class="logo"><img class="logo" src="images/andc_logo.jpg"></div>
             <h1>VLab@ANDC</h1>
             <ul class="navigation">    
                 <li><a href="index.html">Home</a></li> 
@@ -167,9 +167,16 @@
                         <h2 class="heading">Animation</h2>
                     </div>
                     <div class="desc1"><p class="desc">Animation of the experiment:--</p></div>
-                    <video width="600" poster="poster-dna.jpg" controls>
-                        <source src="dna-extact.mp4" type="video/mp4">
-                      </video>
+                    <video 
+                    id="my-video"
+                    class="video-js" 
+                    controls
+                    width="600" 
+                    poster="images/poster-dna.jpg" 
+                    data-setup="{}"
+                    >
+                    <source src="anime/dna-extract.mp4" type="video/mp4" />
+                    </video>
                 </div>
                 <div class="box" id="result">
                     <div class="title">
@@ -194,6 +201,7 @@
                 </div>
             </div>
         </section>
+        <!-- VideoJS to beautify video player -->
     <script>
         document.onkeydown = function(e) {
   if(event.keyCode == 123) {
@@ -213,11 +221,6 @@
   }
 }
     </script>
-    <script src="/ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
-    <script>
-        var editor = ace.edit("editor");
-        editor.setTheme("ace/theme/monokai");
-        editor.getSession().setMode("ace/mode/javascript");
-    </script>
+    <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
     </body>
 </html>

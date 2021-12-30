@@ -6,13 +6,13 @@
         <title>
             Monte-Carlo Estimation of Pi
         </title>
-        <link rel="stylesheet" href="style_monte-main.css" />
-        <link rel="shotcut icon" type="image/jpg" href="FavAndLogo.png">
+        <link rel="stylesheet" href="css/style_monte-main.css" />
+        <link rel="shotcut icon" type="image/jpg" href="images/FavAndLogo.png">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/CDNSFree2/PrismJS@latest/prism.min.css">
     </head>
     <body oncontextmenu="return false">
         <header>
-            <div class="logo"><img class="logo" src="andc_logo.jpg"></div>
+            <div class="logo"><img class="logo" src="images/andc_logo.jpg"></div>
             <h1>VLab@ANDC</h1>
             <ul class="navigation">    
                 <li><a href="index.html">Home</a></li> 
@@ -160,46 +160,8 @@
                     </div>
                     <div class="desc1"><p class="desc">Take Observations from simulator and tabulate it for &#960 and Interval. </div>
                     <div class="desc1"><p class="desc">Plot a graph also. (&#960 vs Interval).</div>
-                    <img src="newplot.png">    
+                    <img src="images/newplot.png" height=500 width=900 />    
                 </div>
-                <!--<div class="box">
-                    <div class="title">
-                        <h2 class="title">Code Runner </h2>
-                        <div class="editor">
-                            #include&ltiostream&gt
-                                #include&ltstdlib.h&gt
-                                #include&lttime.h&gt
-                                #include&ltiomanip&gt
-                                
-                                
-                                using namespace std;
-                                int main()
-                                {
-                                    cout.setf(ios::fixed);
-                                    cout&lt&lt"------------------------------------------------------------"&lt&ltendl;
-                                    cout&lt&lt"x"&lt&ltsetw(15)&lt&lt"y"&lt&ltsetw(14)&lt&lt"circle_pt"&lt&ltsetw(12)&lt&lt"square_pt"&lt&ltsetw(10)&lt&lt"pi"&lt&ltendl;
-                                    cout&lt&lt"------------------------------------------------------------"&lt&ltendl;
-                                    int i, intrval=1000;
-                                    int cr_pt=0, sq_pt=0;
-                                    double x,y,pi,r;
-                                    srand(time(NULL));
-                                    for (i=0; (i&ltintrval); i++)
-                                    {
-                                        x=double((1+rand()%intrval))/intrval;
-                                        y=double((1+rand()%intrval))/intrval;
-                                        r= x*x + y*y;
-                                        if (r&lt=1)
-                                            cr_pt++;
-                                        sq_pt++;
-                                        
-                                        pi=double(4*cr_pt)/sq_pt;
-                                        cout&lt&ltx&lt&ltsetw(10)&lt&lty&lt&ltsetw(10)&lt&ltcr_pt&lt&ltsetw(10)&lt&ltsq_pt&lt&ltsetw(15)&lt&ltpi&lt&ltendl;
-                                    } 
-                                    return 0;
-                                }
-                        </div>
-                    </div>
-                </div>-->
                 <div class="box" id="result">
                     <div class="title">
                         <h2 class="heading">Result</h2>
