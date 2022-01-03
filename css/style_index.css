@@ -7,7 +7,7 @@
     font-family: 'Times New Roman', Times, serif;
 }
 body {
-    background: linear-gradient(28deg,rgba(248, 182, 167, 0.658),rgba(255, 203, 143, 0.746));
+    background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
 }
 #carouselExampleSlidesOnly{
     /* opacity: 0.9; */
