@@ -7,7 +7,7 @@
     font-family: 'Times New Roman', Times, serif;
 }
 body {
-    background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+    background-image: linear-gradient(to top, #50cc7f 0%, #f5d100 100%);
 }
 #carouselExampleSlidesOnly{
     /* opacity: 0.9; */
