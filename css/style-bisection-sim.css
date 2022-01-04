@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,10 +7,10 @@
 }
 
 body {
-    background-color: #21D4FD;
-    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    background-color: #F4D03F;
+    background-image: linear-gradient(30deg, #F4D03F 0%, #16A085 100%);
     font-family: 'Source Serif Pro';
-    height: 220vh;
+    height: 225vh;
 }
 
 header {
@@ -71,9 +72,8 @@ header .navigation li a:hover {
     position: absolute;
     top: 17%;
     text-align: center;
-    border: 2px solid black;
     background: rgb(233, 214, 214);
-    border-radius: 25px;
+    border-radius: 40px;
     width: 90%;
     padding: 2%;
     left: 5%;
@@ -87,16 +87,16 @@ header .navigation li a:hover {
     color: rgb(40, 0, 149);
     font-size: 2rem;
 }
-
 .explanation {
     position: absolute;
-    top: 40%;
+    line-height: 130%;
+    font-weight: 500;
+    top: 42%;
     width: 90%;
     padding: 2%;
     left: 5%;
-    border: 2px solid black;
     background: rgb(233, 214, 214);
-    border-radius: 25px;
+    border-radius: 40px;
     font-size: 1.5rem;
 
 }
@@ -105,13 +105,12 @@ header .navigation li a:hover {
     position: absolute;
     margin-top: 2%;
     line-height: 50px;
-    top: 80%;
+    top: 84%;
     width: 90%;
     padding: 2%;
     left: 5%;
-    border: 2px solid black;
     background: rgb(233, 214, 214);
-    border-radius: 25px;
+    border-radius: 40px;
     font-size: 1.5rem;
 }
 
@@ -142,7 +141,7 @@ header .navigation li a:hover {
 #graph {
     position: absolute;
     left: 20%;
-    margin-top: 3%;
+    margin-top: 4%;
     height: 400px;
     overflow: hidden;
     border-radius: 10px;
