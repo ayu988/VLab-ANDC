@@ -79,18 +79,18 @@ header .navigation li a:hover {
     left: 5%;
 }
 
+
 .heading--1 {
-    font-size: 3rem;
+    font-size: 1.8rem;
 }
 
 .heading--2 {
     color: rgb(40, 0, 149);
-    font-size: 2rem;
+    font-size: 1rem;
 }
 .explanation {
     position: absolute;
     line-height: 130%;
-    font-weight: 500;
     top: 43%;
     width: 90%;
     padding: 2%;
