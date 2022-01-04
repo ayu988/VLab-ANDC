@@ -10,7 +10,7 @@ body {
     background-color: #F4D03F;
     background-image: linear-gradient(30deg, #F4D03F 0%, #16A085 100%);
     font-family: 'Source Serif Pro';
-    height: 225vh;
+    height: 230vh;
 }
 
 header {
@@ -103,7 +103,7 @@ header .navigation li a:hover {
 
 .bisection-method {
     position: absolute;
-    margin-top: 4%;
+    margin-top: 3%;
     line-height: 50px;
     top: 84%;
     width: 90%;
