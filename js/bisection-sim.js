@@ -27,7 +27,6 @@ submit.addEventListener('click', function (e) {
     let root;
     let equation;
 
-    setTimeout(() => {
     for (iterations; iterations < userIterationsValue; iterations++) {
         const equation1 = valueA * intervalAvalue ** 3 + valueB * intervalAvalue ** 2 + valueC * intervalAvalue + valueD;
         const equation2 = valueA * intervalBvalue ** 3 + valueB * intervalBvalue ** 2 + valueC * intervalBvalue + valueD;
@@ -81,7 +80,6 @@ submit.addEventListener('click', function (e) {
         const data12 = [trace1, trace2, trace3];
         Plotly.newPlot("graph", data12, layout);
         equationResult.textContent = root;
-    }, 1000);
     });
     
     document.getElementById("file--download").onclick = function down() {
