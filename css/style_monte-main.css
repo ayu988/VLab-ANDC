@@ -66,6 +66,8 @@ nav {
     justify-items: center;
     font-weight: bold;
     color: honeydew;
+    z-index: 1;
+    top: 0%;
 }
 nav .box {
     margin: 1.5rem;

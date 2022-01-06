@@ -8,8 +8,8 @@
         Finding roots by Bisection-Method
     </title>
     <link rel="stylesheet" href="css/style-bisection-main.css" />
-<!--     <link rel="stylesheet" href="style-bisection-main.css" /> -->
-    <link rel="shotcut icon" type="image/jpg" href="images/FavAndLogo.png">
+    <!--     <link rel="stylesheet" href="style-bisection-main.css" /> -->
+    <link rel="icon" type="image/x-icon" href="images/FavAndLogo.jpg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/CDNSFree2/PrismJS@latest/prism.min.css">
 </head>
 
@@ -94,15 +94,18 @@
                 <div class="desc1">
                     <p class="desc">
                     <h2 class="desc-heading">What is Bisection Method?</h2>
-                    <p class="desc">The method is also called the interval halving method, the binary search method or the dichotomy method. This method is used to find root of an equation in a given interval that is value of 'x' for which f(x) = 0. The method is based on The Intermediate Value Theorem which states that if f(x) is a continuous function and there are two real numbers a and b such that f(a)*f(b) 0 and f(b) < 0), then it is guaranteed that it has at least one root between them.</p>
+                    <p class="desc">The method is also called the interval halving method, the binary search method or
+                        the dichotomy method. This method is used to find root of an equation in a given interval that
+                        is value of 'x' for which f(x) = 0. The method is based on The Intermediate Value Theorem which
+                        states that if f(x) is a continuous function and there are two real numbers a and b such that
+                        f(a)*f(b) 0 and f(b) < 0), then it is guaranteed that it has at least one root between them.</p>
                             <!-- <p class="desc">It is the area of the unit circle (i.e. the circle with radius 1) or half
                                 the
                                 perimeter of the unit circle.</p> -->
                             <h2 class="desc">Assumptions: </h2>
                             <p class="desc">1. f(x) is a continuous function in interval [a, b]. <br>
-                               2. f(a) * f(b) < 0
-                            </p>
-                            <!-- <p class="desc">Monte-Carlo Simulations are used whenever calculating something in a
+                                2. f(a) * f(b) < 0 </p>
+                                    <!-- <p class="desc">Monte-Carlo Simulations are used whenever calculating something in a
                                 deterministic
                                 fashion is too computationally expensive or not feasible anymore. Or when you’re just
                                 too lazy
@@ -110,7 +113,7 @@
                                 And sometimes it is not even necessary to use Monte-Carlo Simulations and the only
                                 reason to use
                                 them is to show how beautiful Math and Probabilities can be.</p> -->
-                    </p>
+                            </p>
                 </div>
             </div>
             <div class="box" id="procedure">
@@ -124,7 +127,7 @@
                         <li>Enter the values of interval</li>
                         <li>If f(a) * f(b) >0 then enter different intervals.</li>
                         <li>Else root(c)= (a + b)/2</li>
-                        <li>If f(a) * f(b) < 0 then b = c</li>
+                        <li>If f(a) * f(b) < 0 then b=c</li>
                         <li>Else a = c</li>
                         <li>Process will run until the desired iteration is reached.</li>
                         <li>Terminate.</li>
@@ -232,8 +235,10 @@ int main()
                     <p class="desc">Hence we findout the roots for the given polynomial.</p>
                 </div>
                 <div class="desc1">
-                    <p class="desc">Advantage of the bisection method is that it is guaranteed to be converged. Disadvantage of bisection method is that it cannot detect multiple roots.
-                        In general, Bisection method is used to get an initial rough approximation of solution. Then faster converging methods are used to find the solution. 
+                    <p class="desc">Advantage of the bisection method is that it is guaranteed to be converged.
+                        Disadvantage of bisection method is that it cannot detect multiple roots.
+                        In general, Bisection method is used to get an initial rough approximation of solution. Then
+                        faster converging methods are used to find the solution.
                         We will soon be discussing other methods to solve algebraic and transcendental equations</p>
                 </div>
                 <!-- <div class="desc1">
@@ -248,7 +253,8 @@ int main()
                 <div class="desc1">
                     <p class="desc"><a href='https://en.wikipedia.org/wiki/Bisection_method'>Bisection-Method
                             Wikipedia</a></p>
-                    <p class="desc"><a href="https://www.geeksforgeeks.org/program-for-bisection-method/">Bisection method-on
+                    <p class="desc"><a href="https://www.geeksforgeeks.org/program-for-bisection-method/">Bisection
+                            method-on
                             geeksforgeeks</a></p>
                 </div>
             </div>
@@ -256,29 +262,23 @@ int main()
     </section>
     <script>
         document.onkeydown = function (e) {
-            if (event.keyCode == 123) {
-                return false;
-            }
-            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-                return false;
-            }
-            if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-                return false;
-            }
-            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-                return false;
-            }
-            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-                return false;
-            }
+        if (event.keyCode == 123) {
+        return false;
         }
-    </script>
-    <script src="/ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
-    <script>
-        var editor = ace.edit("editor");
-        editor.setTheme("ace/theme/monokai");
-        editor.getSession().setMode("ace/mode/javascript");
-    </script>
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+        return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+        return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+        return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+        return false;
+        }
+        }</script>
+
 </body>
 
 </html>
