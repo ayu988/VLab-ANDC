@@ -82,7 +82,8 @@ submit.addEventListener('click', function (e) {
         equationResult.textContent = root;
     });
     
-    document.getElementById("file--download").onclick = function down() {
+    document.getElementById("file--download").onclick = function down(e) {
+         e.preventDefault();
     function download_csv_file() {
         var rows = ['Iterations', 'f(A)', 'f(B)', 'Root\n'];
         equationData.forEach(function (cell) {
