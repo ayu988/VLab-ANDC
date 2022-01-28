@@ -1,152 +1,131 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    background:rgb(145, 226, 92);    
-}
 header {
-    position: absolute;
-    top: 0%;
-    left: 0%;
+    height: 12vh;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 20px 80px;
-    z-index: 10;
-    background-color: rgb(0, 16, 88);
+    background: rgb(0, 52, 65);
+    text-align: center;
 }
 header .logo {
-    position: relative;
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    z-index: 10;
+    margin-left: 1%;
+    margin-right: 1%;
 }
-
-header>h1 {
-    font-size: 2rem;
+header > h1 {
+    font-size: 1.5rem;
     color: white;
 }
-
 header .navigation {
     display: flex;
     flex-direction: row;
-    margin: 10px 0;
 }
-
 header .navigation li {
-    font-size: 1.5rem;
+    font-size: 20px;
     list-style: none;
-    margin: 0px 10px;
+    margin-left: 20px;
 }
-
 header .navigation li a {
-    color: rgb(255, 255, 255);
+    color:rgb(255, 255, 255);
     text-decoration: none;
-    letter-spacing: 1px;
     font-weight: 400;
-    border: 2px solid white;
-    padding: 4px 6px;
-    border-radius: 10px;
+    background: rgba(0, 61, 58, 0.966);
+    border-radius: 3px;
 }
-
 header .navigation li a:hover {
     cursor: pointer;
-    color: yellow;
+    color:rgb(0, 255, 255);
     text-decoration: underline;
-    text-shadow: 2px sandybrown;
 }
-header>h1 {
-    font-size: 2rem;
-    color: white;
+@media screen and (max-width: 768px) {
+    header > h1 {
+        font-size: 0.8rem;
+    }
+    header .navigation li  {
+        font-size: 10px;
+    }    
+    header .logo {
+        height: 20px;
+        width: 20px;
+    }
 }
-
-header .navigation {
+body {
+    background-color:#3c026cc4;
     display: flex;
-    flex-direction: row;
-    margin: 10px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #3c026cc4;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
 }
-
-header .navigation li {
-    font-size: 1.5rem;
-    list-style: none;
-    margin: 0px 10px;
-}
-
-header .navigation li a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    letter-spacing: 1px;
-    font-weight: 400;
-    border: 2px solid white;
-    padding: 4px 6px;
-    border-radius: 10px;
-}
-
-header .navigation li a:hover {
-    cursor: pointer;
-    color: yellow;
-    text-decoration: underline;
-    text-shadow: 2px sandybrown;
+.pi-detail{
+    width: 95%;
+    margin: 0px auto;
 }
 
 .header {
     display: block;
     font-family: sans-serif;
 }
-.myHead {
-    position: absolute;
-    top: 17%;
+
+#title {
+    margin-top: 100px;
+    display: block;
     text-align: center;
-    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
-    border-radius: 40px;
-    width: 90%;
-    padding: 2%;
-    left: 5%;
+    font-size: 4rem;
+    font-family: Arial;
+    color: #ffff55;
+}
+#sub {
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    margin: 1vh 0;
+    font-style: italic;
+    margin-bottom: 5vh;
 }
 
-.heading--1 {
-    font-size: 1.8rem;
+#subTitle {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 2em;
+    margin-top: 80px;
+    font-weight: bold;
+    color: floralwhite;
 }
 
-.heading--2 {
-    color: rgb(40, 0, 149);
-    font-size: 1rem;
+#info {
+    margin-top: 20px;
+    color: #ffff00;
+    display: block;
+    font-size: 1.2rem;
+    font-family: 'Baloo Bhai 2', cursive;
 }
-
-.explanation {
-    position: absolute;
-    line-height: 130%;
-    top: 43%;
-    width: 90%;
-    padding: 2%;
-    left: 5%;
-    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
-    border-radius: 40px;
-    font-size: 1.5rem;
-
+@media screen and (max-width: 768px) {
+    #title{
+        font-size: 2rem;
+    }
+    #subTitle {
+        font-size: 1rem;
+    }
+    
 }
-
-.monte-method {
-    position: absolute;
-    margin-top: 3%;
-    line-height: 50px;
-    top: 90%;
-    width: 90%;
-    padding: 2%;
-    left: 5%;
-    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
-    border-radius: 40px;
-    font-size: 1.5rem;
-}
-
-
-.math1 {
-    border: 2px solid rgb(0, 247, 255);
+.math1{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border: 2px solid yellow;
+    text-align: center;
     width: 40%;
     margin-left: 30%;
     color: red;
@@ -154,10 +133,8 @@ header .navigation li a:hover {
     border-radius: 20px;
     background: white;
     margin-top: 2%;
-    margin-bottom: 1%;
     padding: 4px;
 }
-
 #canvas {
     display: flex;
     border: 3px solid orange;
@@ -166,70 +143,144 @@ header .navigation li a:hover {
     margin-top: 3vh;
     margin-bottom: 3vh;
 }
-.btn {
-    border: 2px solid yellow;
-    position: relative;
-    font-size: 1.2rem;
-    background: black;
-    color: white;
-    border-radius: 12px;
-    padding: 6px 10px;
-    margin: 2% auto;
-}
 
-#start {
-    left: 47%;
-}
-
-#click_downlsoad {
-    left: 44%;
-}
-
-table *,
-table {
-    border: 2px solid rgb(255, 255, 255);
-    text-align: center;
-    height: 35px;
-    border-radius: 10px;
-    background: black;
-    color: white;
-}
-
-td {
-    font-size: 1.2rem;
-    color: white;
-}
-
-th {
-    font-size: 1.2rem;
-    color: white;
-}
-
-table {
-    padding: 3px 0px;
+.container table {
+    padding: 3px;
     width: 70%;
     overflow: hidden;
     margin: 0px auto;
 }
-
-#graph {
-    position: absolute;
-    left: 20%;
-    margin-top: 4%;
-    height: 400px;
-    overflow: hidden;
+#start{
+    background-color: black;
+    color: white;
+    margin: 10px auto;
+    padding: 2px 20px;
+    border: 2px solid grey;
     border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-weight: bold;
+}
+#click_download{
+    background-color: black;
+    color: white;
+    /* margin-top: 10px; */
+    margin: 0 auto;
+    padding: 2px 20px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-weight: bold;
+}
+/* .btn{
+    margin-left: 500px;
+    display: flex;
+} */
+
+.container table *,
+.container table {
+    border: 1px solid rgb(255, 255, 255);
+    border-width: 1.5px;
+    text-align: center;
+    height: 35px;
+    border-radius: 4px;
+    color: white;
+    margin-top: 20px;
 }
 
-#inp1 {
+.container td {
+    font-family: monospace;
+    font-size: 1.2em;
+    color: white;
+}
+
+#pi {
+    padding-left: 50%;
+    text-align: left;
+}
+
+.controls {
+    display: flex;
+    width: 100%;
+    height: 25px;
+    margin: 20px 0;
+    justify-content: space-around;
+}
+
+.controls button {
+    display: inline-block;
+    width: 100px;
+    padding: 0.2em 0.8em;
+    background-color: inherit;
+    border: 1px solid yellow;
+    color: var(--Main-Color);
+    font-size: 0.8em;
+    outline: none;
+}
+
+.controls button:hover {
+    display: inline-block;
+    font-style: italic;
+    text-decoration: underline;
+    color: white;
+}
+
+.controls button:active {
+    display: inline-block;
+  }
+
+footer {
+    display: block;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 0.7em;
+    border: 3px solid lawngreen;
+    border-radius: 10px;
+    padding: 10px 10px;
+    color: white;
+    /* display: flex; */
+    align-content: center;
+    justify-content: center;
+    margin: 2%;
+}
+
+#inp1{
     background-color: black;
     color: white;
     border: 3px solid #ffff00;
     display: block;
     width: 300px;
     margin: 4px auto;
-    padding: 10px;
+    padding: 8px;
     text-align: center;
     border-radius: 10px;
     font-size: 15px;
+}
+body>footer {
+    text-align: center;
+    font-size: 0.8em;
+    
+}
+.container{
+    background-color:#3c026cc4;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-content:center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.container>table{
+    color: white;
+}
+#graph{
+    height: 80vh;
+    width: 100%;
 }
