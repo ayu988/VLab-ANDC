@@ -1,6 +1,6 @@
 window.onload = function () {
     var d = document;
-    var canvas = d.getElementById("canvas");
+    var canvas = d.getElementById("canvas1");
     var c = canvas.getContext("2d");
     let res = d.getElementById('reset');
     let sub = d.getElementById('inp1');
