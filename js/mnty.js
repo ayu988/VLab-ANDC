@@ -98,7 +98,7 @@ window.onload = function () {
                 };
                 data12 = [trace1, trace2];
                 var layout = {
-                    autosize: false,
+                    autosize: true,
                     title: 'Pi vs Interval Graph',
                     xaxis: {
                         title: 'Intervals'
@@ -107,7 +107,8 @@ window.onload = function () {
                         title: 'Calculated Pi',
                     }
                 };
-                Plotly.newPlot("graph", data12, layout);
+                var config = {responsive: true}
+                Plotly.newPlot("graph", data12, layout, config );
                 c.beginPath();
                 c.arc(x, y, 3.2, 0, Math.PI * 2, false);
                 c.fill();
