@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="css/style_mp.css">
     <meta charset="UTF-8">
@@ -8,73 +9,108 @@
     <link rel="shotcut icon" type="image/jpg" href="images/FavAndLogo.png">
     <title>MP Lab</title>
 </head>
-<body oncontextmenu="return false">
-    <span>
-        <div class="logo"><img class="logo" src="images/andc_logo.jpg"></div>
-        <h1>VLab@ANDC</h1>
-        <ul class="navigation">    
-            <li><a href="index.html">Home</a></li> 
-            <li><a href="index.html#labs_section">Labs</a></li> 
-            <li><a href="index.html#team">Team</a></li> 
-            <li><a href="contact.html">Contact Us</a></li> 
-            <li><a href="https://www.andcollege.du.ac.in/" target="_blank" rel="noopener noreferrer">College Website</a></li> 
-        </ul>
-    </span><br>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/andc_logo.jpg" alt="logo" />
+            <h2 class="logo">V-Lab @ ANDC</h2>
+        </div>
+        <nav>
+            <h1 class="logo">Physical Sciences</h1>
+        </nav>
+    </header>
+    <br>
     <div class="heading-exp">
-        <h1><br> Mathematical Physics</h1>
+        <h1>Mathematical Physics</h1>
     </div>
     <div class="exps">
         <h1>List of experiments:-</h1>
         <div class="container">
             <div class="box">
                 <a href="monte-main.html">
-                <div class="title"><h2>Random Number Operations:-</h2></div>
-                <div class="desc"><p class="desc">Generating pseudo random numbers To find value of pi using Monte Carlo simulations.</p></div>
+                    <div class="title">
+                        <h2>Random Number Operations:-</h2>
+                    </div>
+                    <div class="desc">
+                        <p class="desc">Generating pseudo random numbers To find value of pi using Monte Carlo
+                            simulations.</p>
+                    </div>
                 </a>
             </div>
             <div class="box">
                 <a href="bisection-main.html">
-                <div class="title"><h2 class="heading">Solution of Algebraic equations by 
-                    Bisection Methods:-</h2></div>
-                <div class="desc">
-                    <p class="desc">To determine the root of polynomial of third degree or quadratic.
-                    </p>
-                </div>
-                       </a>
+                    <div class="title">
+                        <h2 class="heading">Solution of Algebraic equations by
+                            Bisection Methods:-</h2>
+                    </div>
+                    <div class="desc">
+                        <p class="desc">To determine the root of polynomial of third degree or quadratic.
+                        </p>
+                    </div>
+                </a>
             </div>
             <div class="box">
-                 <a href="newton-main.html">
-                <div class="title"><h2 class="heading">Solution of Algebraic and 
-                    Transcendental equations by 
-                    Newton-Raphson Method:-</h2></div>
-                    <p class="desc">Use this method to calculate roots of a function by providing the nearest guess. To determine the position of maxima including secondary
+                <div class="title">
+                    <h2 class="heading">Solution of Algebraic and
+                        Transcendental equations by
+                        Newton-Raphson Method:-</h2>
+                </div>
+                <div class="desc">
+                    <p class="desc">Use this method to calculate roots of a function in "ISOLATED INTERVALS".To
+                        determine the position of maxima including secondary
                         maxima, Intensity in single slit Fraunhofer diffraction.
-                    </p> 
-                        <p class="desc">Use this Method to find roots of f(x)=x-tan(x), then find the Intensity using formula –</p><br>
+                    </p>
+                    <p class="desc">Use this Method to find roots of f(x)=x-tan(x), then using the
+                        root calculate normalized Intensity using formula –</p><br>
                     <img class="image-problem" src="images/intensity equation.jpeg">
-                     </a>
                 </div>
             </div>
         </div>
     </div>
+    <!-- <script>
+        document.onkeydown = function (e) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                return false;
+            }
+        }
+    </script> -->
     <script>
-        document.onkeydown = function(e) {
-  if(event.keyCode == 123) {
-     return false;
-  }
-  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-     return false;
-  }
-  if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-     return false;
-  }
-  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-     return false;
-  }
-  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-     return false;
-  }
-}
+        const navSlide = () => {
+            const idBurger = document.getElementById("burger-id")
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.nav-links')
+            const navLinks = document.querySelectorAll('.nav-links li')
+            burger.addEventListener('click', () => {
+                nav.addEventListener('click', () => {
+                    idBurger.click()
+                })
+                nav.classList.toggle('nav-active');
+                navLinks.forEach((link, index) => {
+                    if (link.style.animation) {
+                        link.style.animation = ''
+                    }
+                    else {
+                        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 4}s`
+                    }
+                });
+                burger.classList.toggle('rotate-line')
+            })
+        };
+        navSlide();
     </script>
 </body>
+
 </html>
