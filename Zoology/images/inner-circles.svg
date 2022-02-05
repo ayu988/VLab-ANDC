@@ -1,0 +1,16 @@
+<svg width="723" height="723" viewBox="0 0 723 723" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="inner-circles">
+<g id="frame">
+<circle id="Ellipse 1" cx="361.5" cy="361.5" r="351.5" fill="white" stroke="black" stroke-width="20"/>
+<circle id="Ellipse 2" cx="361.5" cy="361.5" r="186.5" fill="white" stroke="black" stroke-width="20"/>
+</g>
+<circle id="Ellipse 3" cx="362" cy="91" r="64" fill="#FAFF00" stroke="black" stroke-width="20"/>
+<circle id="Ellipse 4" cx="362" cy="632" r="64" fill="#FF0000" stroke="black" stroke-width="20"/>
+<circle id="Ellipse 5" cx="91" cy="362" r="64" fill="white" stroke="black" stroke-width="20"/>
+<circle id="Ellipse 6" cx="632" cy="362" r="64" fill="white" stroke="black" stroke-width="20"/>
+<circle id="Ellipse 7" cx="561" cy="181" r="64" fill="white" stroke="black" stroke-width="20"/>
+<circle id="Ellipse 8" cx="176" cy="558" r="64" fill="white" stroke="black" stroke-width="20"/>
+<circle id="Ellipse 9" cx="559" cy="544" r="64" fill="white" stroke="black" stroke-width="20"/>
+<circle id="Ellipse 10" cx="156" cy="186" r="64" fill="white" stroke="black" stroke-width="20"/>
+</g>
+</svg>
